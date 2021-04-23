@@ -1,0 +1,42 @@
+
+á
+
+9
+android*http://schemas.android.com/apk/res/android
+2
+app'http://schemas.android.com/apk/res-automenu*
+
+    8*–
+item"d
+*http://schemas.android.com/apk/res/androidicon@drawable/feed"(‚€„2
+² ødrawable/feed"_
+*http://schemas.android.com/apk/res/androidid@+id/nav_feed"(Ğ„2
+Ó‚¨øid/nav_feed">
+*http://schemas.android.com/apk/res/androidtitleFeed(áƒ„*
+
+    	*«
+¢item"v
+*http://schemas.android.com/apk/res/androidicon@drawable/bookingfooter"(‚€„2 
+ã€ ødrawable/bookingfooter"_
+*http://schemas.android.com/apk/res/androidid@+id/nav_book"(Ğ„2
+Ò‚¨øid/nav_book"A
+*http://schemas.android.com/apk/res/androidtitleBooking(áƒ„*
+
+    "*­
+¤item"r
+*http://schemas.android.com/apk/res/androidicon@drawable/prizefooter"(‚€„2
+†‚ ødrawable/prizefooter"e
+*http://schemas.android.com/apk/res/androidid@+id/nav_pricing"(Ğ„2
+Õ‚¨øid/nav_pricing"A
+*http://schemas.android.com/apk/res/androidtitlePricing(áƒ„*
+
+    "*¦
+item"l
+*http://schemas.android.com/apk/res/androidicon@drawable/viewicon"(‚€„2
+‚ ødrawable/viewicon"_
+*http://schemas.android.com/apk/res/androidid@+id/nav_more"(Ğ„2
+Ô‚¨øid/nav_more"F
+*http://schemas.android.com/apk/res/androidtitleConsent form(áƒ„*
+
+
+'

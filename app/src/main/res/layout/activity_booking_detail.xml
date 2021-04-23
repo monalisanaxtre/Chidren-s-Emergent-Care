@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/common_action_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="12dp"
+                android:fontFamily="@font/roboto"
+                android:text="Name"
+                android:textColor="@color/deepblue"
+
+
+                />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:textSize="16sp"
+                android:layout_marginRight="12dp"
+                android:backgroundTint="@color/sign_in_light_blue_color"
+                android:fontFamily="@font/roboto"
+                android:hint="Enter Name"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/name" />
+
+            <TextView
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:fontFamily="@font/roboto"
+                android:text="Mobile Number"
+                android:textColor="@color/deepblue"
+
+                app:layout_constraintTop_toBottomOf="@id/et_name" />
+
+            <EditText
+                android:id="@+id/et_mob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:backgroundTint="@color/sign_in_light_blue_color"
+
+                android:digits="0123456789"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto"
+                android:hint="Enter Mobile Number"
+                android:inputType="phone"
+                android:maxLength="10"
+                app:layout_constraintTop_toBottomOf="@id/mobile" />
+
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:fontFamily="@font/roboto"
+                android:text="Email *"
+                android:textColor="@color/deepblue"
+
+                app:layout_constraintTop_toBottomOf="@id/et_mob" />
+
+            <EditText
+                android:id="@+id/et_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textSize="16sp"
+                android:backgroundTint="@color/sign_in_light_blue_color"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/enter_email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+
+                app:layout_constraintTop_toBottomOf="@id/email" />
+
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:fontFamily="@font/roboto"
+                android:text="Date"
+                android:textColor="@color/deepblue"
+
+                app:layout_constraintTop_toBottomOf="@id/et_mail" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:backgroundTint="@color/sign_in_light_blue_color"
+                android:clickable="true"
+                android:focusable="false"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/enter_date"
+                android:inputType="none"
+                app:layout_constraintTop_toBottomOf="@id/time" />
+
+
+            <TextView
+                android:id="@+id/Timetxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:fontFamily="@font/roboto"
+                android:text="Time"
+                android:textColor="@color/deepblue"
+                app:layout_constraintTop_toBottomOf="@id/etDate" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/timecons"
+                android:backgroundTint="@color/sign_in_light_blue_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/time"
+                    style="@style/edit_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:cursorVisible="false"
+                    android:fontFamily="@font/roboto"
+
+                    android:drawableEnd="@mipmap/dropdown"
+                    android:drawablePadding="5dp"
+                    android:inputType="none"
+                    android:backgroundTint="@color/sign_in_light_blue_color"
+                    android:focusable="false"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Spinner
+                    android:id="@+id/spinner_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent"
+                    android:visibility="visible"
+                    android:fontFamily="@font/roboto"
+                    app:layout_constraintBottom_toBottomOf="@+id/time"
+                    app:layout_constraintEnd_toEndOf="@+id/time"
+                    android:backgroundTint="@color/sign_in_light_blue_color"
+                    app:layout_constraintStart_toStartOf="@+id/time"
+                    app:layout_constraintTop_toTopOf="@+id/time" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@color/sign_in_light_blue_color" />
+            <!--    <androidx.appcompat.widget.AppCompatEditText-->
+            <!--        android:id="@+id/etTime"-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_marginLeft="12dp"-->
+            <!--        android:fontFamily="@font/open_sans"-->
+            <!--        android:layout_marginRight="12dp"-->
+            <!--        android:backgroundTint="@color/sign_in_light_blue_color"-->
+            <!--        android:clickable="true"-->
+            <!--       android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"-->
+            <!--        android:focusable="false"-->
+            <!--        android:hint="Enter Time"-->
+            <!--        android:inputType="none"-->
+            <!--        app:layout_constraintTop_toBottomOf="@id/Time" />-->
+
+
+            <!--    <Spinner-->
+            <!--        android:id="@+id/spinner_time"-->
+            <!--        android:layout_width="50dp"-->
+            <!--        android:layout_height="50dp"-->
+            <!--        android:background="@android:color/transparent"-->
+            <!--        android:visibility="visible"-->
+            <!--        android:layout_gravity="end"-->
+            <!--        />-->
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/confirmbkng_btn"
+                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/confirmbtn_circle"
+                android:fontFamily="@font/open_sans"
+                android:padding="15dp"
+                android:textAllCaps="false"
+                android:text="Confirm Booking"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/timecons" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/layout_progress" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

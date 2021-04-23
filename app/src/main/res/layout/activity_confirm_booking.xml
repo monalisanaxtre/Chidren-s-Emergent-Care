@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/doctorImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/deepblue"
+            app:layout_constraintHeight_percent="0.35"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/circle_correct"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/confi"
+            />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="Booking Confirmed"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:fontFamily="@font/roboto_regular"
+        app:layout_constraintTop_toBottomOf="@+id/circle_correct">
+
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".28" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardbook"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:clipToPadding="true"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="12dp"
+
+            app:layout_constraintTop_toTopOf="@id/guide">
+
+            <RelativeLayout
+                android:id="@+id/id_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:paddingEnd="15dp">
+
+                <TextView
+                    android:id="@+id/textid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="ID:"
+                    android:visibility="gone"
+                    android:textColor="@color/grey"
+                    android:textSize="17sp" />
+                <TextView
+                    android:id="@+id/textid_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12345"
+                    android:visibility="gone"
+                    android:fontFamily="@font/open_sans"
+                    android:layout_toRightOf="@id/textid"
+                    android:textColor="@color/grey"
+                    android:textSize="17sp"
+                  />
+
+
+                <ImageButton
+                    android:id="@+id/edit_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:visibility="gone"
+                    android:textColor="@color/grey"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_baseline_edit_24"
+
+                    android:textSize="18dp"
+                    />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardimg"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_below="@id/textid_tv"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp"
+                    >
+                <ImageView
+                    android:id="@+id/imgview"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/vipgrg"
+                   />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_btn"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/cardimg"
+                    android:fontFamily="@font/roboto"
+                    android:text="fghfghg"
+                    android:textColor="@color/blue"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/speclze_tv"
+                    android:layout_toRightOf="@id/cardimg"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/textname"
+                    android:fontFamily="@font/roboto"
+                    android:layout_height="wrap_content"
+                    android:text="ghjghj"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/grey"
+                    android:textSize="12dp"
+                   />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/Bookingid"
+                    android:layout_toRightOf="@id/cardimg"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/cardimg"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/roboto"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Booking"
+                    android:layout_marginTop="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="6dp"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp"
+                    />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/Bookingno"
+                    android:layout_toRightOf="@id/Bookingid"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginTop="12dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/cardimg"
+                    android:textStyle="bold"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:textColor="@color/black_exact"
+                    android:textSize="14sp"
+                    />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/grey"
+                   android:layout_below="@id/Bookingno" />
+
+
+                <TextView
+                    android:id="@+id/textnm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto"
+                    android:padding="6dp"
+                    android:text="Name:"
+                    android:textColor="@color/grey"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nm_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fnjghjghgjghkjh"
+                    android:layout_marginTop="5dp"
+                    android:padding="6dp"
+                    android:fontFamily="@font/roboto"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/view"
+                    android:textColor="@color/grey"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/textime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textnm"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto"
+                    android:padding="6dp"
+                    android:text="Time:"
+                    android:textColor="@color/grey"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fnjghj"
+                    android:padding="6dp"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/nm_tv"
+                    android:textColor="@color/grey"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/textdt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textime"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto"
+                    android:padding="6dp"
+                    android:text="Date:"
+                    android:textColor="@color/grey"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dt_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="05 july 2020"
+                    android:padding="6dp"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/time_tv"
+                    android:textColor="@color/grey"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+
+
+
+
+            </RelativeLayout>
+<!--            -->
+<!--            -->
+        </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/donebtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardbook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="16sp"
+
+        android:fontFamily="@font/roboto"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/confirmbtn_circle"
+        android:padding="14dp"
+
+        />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

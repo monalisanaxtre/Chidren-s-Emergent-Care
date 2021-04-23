@@ -1,0 +1,47 @@
+
+¡
+9
+android*http://schemas.android.com/apk/res/android
+2
+app'http://schemas.android.com/apk/res-autoRelativeLayout"c
+*http://schemas.android.com/apk/res/androidid@+id/rootLayout"(Ğ„2
+“ƒ¨øid/rootLayout"a
+*http://schemas.android.com/apk/res/androidlayout_heightmatch_parent"(õ„2:0ÿÿÿÿÿÿÿÿÿ"`
+*http://schemas.android.com/apk/res/androidlayout_widthmatch_parent"(ô„2:0ÿÿÿÿÿÿÿÿÿ"R
+*http://schemas.android.com/apk/res/androidorientationvertical"(Ä„2:0*
+    #*Ï
+Æ&com.cec.doctorapp.helper.NonSwipePager"a
+*http://schemas.android.com/apk/res/androidid@+id/viewpager"(Ğ„2
+µ„¨øid/viewpager"t
+*http://schemas.android.com/apk/res/androidlayout_above@id/bottom_navView"(„ƒ„2
+è€¨øid/bottom_navView"a
+*http://schemas.android.com/apk/res/androidlayout_heightmatch_parent"(õ„2:0ÿÿÿÿÿÿÿÿÿ"`
+*http://schemas.android.com/apk/res/androidlayout_widthmatch_parent"(ô„2:0ÿÿÿÿÿÿÿÿÿ*
+
+
+3*	
+*	
+2*	
+2*	
+3*
+
+
+    ;*ë	
+â	Acom.google.android.material.bottomnavigation.BottomNavigationView"h
+'http://schemas.android.com/apk/res-autoitemBackground@color/white"( ƒø2
+•„˜øcolor/white"¢
+'http://schemas.android.com/apk/res-autoitemIconTint*@drawable/bottom_navigation_color_selector"(¨ƒø23
+1è€ ø)drawable/bottom_navigation_color_selector"£
+'http://schemas.android.com/apk/res-autoitemTextColor*@drawable/bottom_navigation_color_selector"(ºƒø23
+1è€ ø)drawable/bottom_navigation_color_selector"W
+'http://schemas.android.com/apk/res-autolabelVisibilityModelabeled"(Àƒø2:0"p
+'http://schemas.android.com/apk/res-automenu@menu/bottom_nav_menu"(¹„ø2
+€€¸ømenu/bottom_nav_menu"k
+*http://schemas.android.com/apk/res/androidid@+id/bottom_navView"(Ğ„2
+è€¨øid/bottom_navView"[
+*http://schemas.android.com/apk/res/androidlayout_alignParentBottomtrue"(ƒ„2:@"a
+*http://schemas.android.com/apk/res/androidlayout_heightwrap_content"(õ„2:0şÿÿÿÿÿÿÿÿ"`
+*http://schemas.android.com/apk/res/androidlayout_widthmatch_parent"(ô„2:0ÿÿÿÿÿÿÿÿÿ"
+*http://schemas.android.com/apk/res/androidtheme"@style/Widget.BottomNavigationView"(€€„2+
+)è„Èø!style/Widget.BottomNavigationView*	
+ +

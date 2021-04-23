@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/co"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/doctorImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".38" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="10dp"
+            android:clipToPadding="true"
+            app:cardCornerRadius="26dp"
+            app:cardElevation="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guide">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="15dp">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="Dr.Vip Garg"
+                    android:textColor="@color/blue"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatRatingBar
+                    android:id="@+id/rt"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text1"
+                    android:layout_marginTop="4dp"
+                    android:progressTint="@color/yellow_700"
+                    android:rating="4.5"
+                    android:max="5"
+                    android:stepSize="0.5"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/rt_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text1"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/rt"
+                    android:fontFamily="@font/roboto"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rt"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Pediatrics(ABMS)"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+                <!--                <androidx.appcompat.widget.AppCompatTextView-->
+                <!--                    android:id="@+id/text3"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_below="@id/rt_txt"-->
+                <!--                    android:layout_marginTop="1dp"-->
+                <!--                    android:layout_toRightOf="@id/text2"-->
+                <!--                    android:text="monalisa" />-->
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text2"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Dr.Vip Garg is available all day,every day." />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/bookingrv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+                <ScrollView
+                    android:id="@+id/scrollview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text3"
+                    android:layout_marginTop="8dp"
+                    android:overScrollMode="never">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text3"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="10dp"
+                            android:clickable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="6dp"
+                            app:cardElevation="6dp"
+                            app:cardUseCompatPadding="false"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <!-- Content -->
+                            <RelativeLayout
+                                android:id="@+id/pricingrl"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:minHeight="60dp"
+                                android:padding="@dimen/margin_5dp">
+
+
+                                <!-- Thumbnail :: Image-->
+                                <ImageView
+                                    android:id="@+id/image_thumbnail"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/pricingsnew"
+                                    app:tint="@color/com_facebook_messenger_blue" />
+
+                                <!-- Two-Line TextView -->
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="16dp"
+
+                                    android:layout_toRightOf="@id/image_thumbnail">
+
+
+                                    <TextView
+                                        android:id="@+id/text_titt"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_marginRight="8dp"
+                                        android:ellipsize="end"
+                                        android:fontFamily="@font/roboto"
+                                        android:text="Pricing "
+                                        android:textColor="#000000"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/text"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/text_titt"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginRight="8dp"
+                                        android:ellipsize="end"
+                                        android:fontFamily="@font/roboto"
+                                        android:maxLines="2"
+                                        android:text="@string/price"
+                                        android:textColor="@color/grey"
+                                        android:textSize="12sp" />
+
+
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card2"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="10dp"
+                            android:clickable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardCornerRadius="6dp"
+                            app:cardElevation="6dp"
+                            app:cardUseCompatPadding="false"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <!-- Content -->
+                            <RelativeLayout
+                                android:id="@+id/timing_rl"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:minHeight="60dp"
+                                android:padding="@dimen/margin_5dp">
+
+                                <!-- Thumbnail :: Image-->
+                                <ImageView
+                                    android:id="@+id/image_thumbnai"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:scaleType="centerCrop"
+                                    app:srcCompat="@drawable/ic_baseline_access_time_24"
+                                    app:tint="@color/com_facebook_messenger_blue" />
+
+                                <!-- Two-Line TextView -->
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="16dp"
+                                    android:layout_toRightOf="@id/image_thumbnai">
+
+
+                                    <TextView
+                                        android:id="@+id/text_titl"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_marginRight="8dp"
+                                        android:ellipsize="end"
+                                        android:fontFamily="@font/roboto"
+                                        android:text="Timing "
+                                        android:textColor="#000000"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/text4"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/text_titl"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginRight="8dp"
+                                        android:ellipsize="end"
+                                        android:fontFamily="@font/roboto"
+                                        android:maxLines="2"
+                                        android:text="@string/Time"
+                                        android:textColor="@color/grey"
+                                        android:textSize="12sp" />
+
+
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="30dp"
+                            android:clickable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardCornerRadius="6dp"
+                            app:cardElevation="6dp"
+                            app:cardUseCompatPadding="false"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <!-- Content -->
+                            <RelativeLayout
+                                android:id="@+id/bookingrl"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:minHeight="60dp"
+                                android:padding="@dimen/margin_5dp">
+
+                                <!-- Thumbnail :: Image-->
+                                <ImageView
+                                    android:id="@+id/image_thumbna"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/bookinglist"
+                                    app:tint="@color/com_facebook_messenger_blue" />
+
+                                <!-- Two-Line TextView -->
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="16dp"
+                                    android:layout_toRightOf="@id/image_thumbna">
+
+
+                                    <TextView
+                                        android:id="@+id/text_tit"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_marginRight="8dp"
+                                        android:ellipsize="end"
+                                        android:fontFamily="@font/roboto"
+                                        android:text="Booking "
+                                        android:textColor="#000000"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tex"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/text_tit"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginRight="8dp"
+                                        android:ellipsize="end"
+                                        android:fontFamily="@font/roboto"
+                                        android:maxLines="2"
+                                        android:text="Book Your schedule "
+                                        android:textColor="@color/grey"
+                                        android:textSize="12sp" />
+
+
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </ScrollView>
+
+
+                <!--                <androidx.cardview.widget.CardView-->
+
+                <!--                    xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--                    xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+                <!--                    android:id="@+id/card3"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_below="@+id/rt"-->
+                <!--                    android:layout_marginTop="40dp"-->
+                <!--                    android:layout_marginBottom="20dp"-->
+                <!--                    android:clickable="true"-->
+                <!--                    android:foreground="?android:attr/selectableItemBackground"-->
+                <!--                    card_view:cardCornerRadius="6dp"-->
+                <!--                    card_view:cardElevation="6dp"-->
+                <!--                    card_view:cardUseCompatPadding="false"-->
+                <!--                    tools:ignore="MissingConstraints">-->
+
+                <!--                    &lt;!&ndash; Content &ndash;&gt;-->
+                <!--                    <RelativeLayout-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:minHeight="60dp">-->
+
+                <!--                        &lt;!&ndash; Thumbnail :: Image&ndash;&gt;-->
+                <!--                        <ImageView-->
+                <!--                            android:id="@+id/image_thumbna"-->
+                <!--                            android:layout_width="30dp"-->
+                <!--                            android:layout_height="30dp"-->
+                <!--                            android:layout_alignParentLeft="true"-->
+                <!--                            android:layout_alignParentTop="true"-->
+                <!--                            android:layout_marginLeft="8dp"-->
+                <!--                            android:layout_marginTop="8dp"-->
+                <!--                            android:layout_marginBottom="8dp"-->
+                <!--                            android:scaleType="centerCrop"-->
+                <!--                            android:src="@mipmap/ic_launcher" />-->
+
+                <!--                        &lt;!&ndash; Two-Line TextView &ndash;&gt;-->
+                <!--                        <RelativeLayout-->
+                <!--                            android:layout_width="match_parent"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:layout_marginLeft="16dp"-->
+                <!--                            android:layout_marginRight="16dp"-->
+                <!--                            android:layout_toRightOf="@id/image_thumbna">-->
+
+
+                <!--                            <TextView-->
+                <!--                                android:id="@+id/text_tit"-->
+                <!--                                android:layout_width="fill_parent"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:layout_alignParentLeft="true"-->
+                <!--                                android:layout_marginTop="4dp"-->
+                <!--                                android:layout_marginRight="8dp"-->
+                <!--                                android:ellipsize="end"-->
+                <!--                                android:fontFamily="sans-serif"-->
+                <!--                                android:text="Pricing "-->
+                <!--                                android:textColor="#000000"-->
+                <!--                                android:textSize="16sp" />-->
+
+                <!--                            <TextView-->
+                <!--                                android:id="@+id/tex"-->
+                <!--                                android:layout_width="fill_parent"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:layout_below="@id/text_tit"-->
+                <!--                                android:layout_alignParentLeft="true"-->
+                <!--                                android:layout_marginRight="8dp"-->
+                <!--                                android:ellipsize="end"-->
+                <!--                                android:fontFamily="sans-serif"-->
+                <!--                                android:maxLines="2"-->
+                <!--                                android:text="Takes 25 more "-->
+                <!--                                android:textColor="#000000"-->
+                <!--                                android:textSize="16sp" />-->
+
+
+                <!--                        </RelativeLayout>-->
+                <!--                    </RelativeLayout>-->
+
+                <!--                </androidx.cardview.widget.CardView>-->
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/common_action_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include layout="@layout/layout_progress" />
+</androidx.constraintlayout.widget.ConstraintLayout>

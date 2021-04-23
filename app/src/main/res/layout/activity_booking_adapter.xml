@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rt"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="6dp"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <!-- Content -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="30dp">
+
+            <!-- Thumbnail :: Image-->
+            <ImageView
+                android:id="@+id/image_thumbna"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher" />
+
+            <!-- Two-Line TextView -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/image_thumbna">
+
+
+                <TextView
+                    android:id="@+id/text_tit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="8dp"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:text="Pricing "
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tex"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_tit"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="8dp"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:maxLines="2"
+                    android:text="Takes 25 more "
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

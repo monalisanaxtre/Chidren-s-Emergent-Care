@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Children\'sEmergentCare</string>
+  <string name="file_provider_authority">com.cec.doctorapp.fileprovider</string>
+    <string name="Hometext"><b><font color="#000000">Monika Horak </font></b> with <b><font color="#000000">Ari Grant </font></b>    and  <b><font color="#000000">3 others</font></b></string>
+    <string name="loc">16 minutes ago in Merio park</string>
+    <string name="notification_adapter"> <font color="#2645EF">Dr. Garg</font><font color="#BDBDBD"> send you notes for daily health</font></string>
+  <string name="itemviewpger">Weekend/Holidays\nafter Hours Pricing</string>
+    <string name="bkcoslt">Book Your\nConsult Day</string>
+    <string name="consultinfo">Please select the day \nbefore go for consulation day</string>
+    <string name="speciliztion">specialist in bone and skin health sharing and work experience in hospital</string>
+    <string name="text_selected_date">Selected Date</string>
+    <string name="week_calendar">Week Calendar</string>
+    <string name="no_internet_msg"> Please check your Internet Connection </string>
+    <string name="facebook_app_id">690983358238466</string>
+    <string name="fb_login_protocol_scheme">fb250197292901264</string>
+    <string name="title_feed">Feed</string>
+    <string name="Pricing">pricing</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_date">Enter Date</string>
+    <string name="CECTXT">Children\'s EmUrgent Care</string>
+    <string name="vccode">Verification Code</string>
+    <string name="confirm_exit">Are you sure,You want to close application?</string>
+    <string name="txt_yes_simple">Yes</string>
+    <string name="txt_no_simple">No</string>
+  <string name="msg_no_notifications">No Notifications Found</string>
+    <string name="hint_no_bookings">No bookings found.</string>
+  <string name="hint_no_booking">There is no booking for this date</string>
+
+  <string name="booking_message">* Press continue to book your appointment</string>
+
+    <string name="booking">Booking</string>
+    <string name="price">Check Price</string>
+  <string name="Time">Check  Doctor\'s Availablity</string>
+  <string name="style_square">square_box</string>
+  <string name="style_rounded">rounded_box</string>
+  <string name="style_underline">underline</string>
+  <string name="style_rounded_underline">rounded_underline</string>
+  <string name="mask_character">\u2022</string>
+    <string name="Booking">BookingId:</string>
+    <string name="msg_Time">Select your Time</string>
+    <string name="nointernetmsg">No Internet Connection</string>
+  <string name="nointernettextmsg">Please Check Your Internet connection and try again</string>
+
+
+</resources>

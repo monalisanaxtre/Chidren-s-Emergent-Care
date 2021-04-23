@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout">
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/common_action_layout" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolBar">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="12dp"
+        android:fontFamily="@font/roboto"
+        android:text="Name"
+        android:textColor="@color/deepblue"
+
+
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:backgroundTint="@color/sign_in_light_blue_color"
+        android:fontFamily="@font/roboto"
+        android:hint="Enter Name"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:fontFamily="@font/roboto"
+            android:text="Email *"
+            android:textColor="@color/deepblue"
+
+            app:layout_constraintTop_toBottomOf="@id/et_name" />
+
+        <EditText
+            android:id="@+id/et_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/sign_in_light_blue_color"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/enter_email"
+
+            app:layout_constraintTop_toBottomOf="@id/email" />
+
+
+
+        <TextView
+            android:id="@+id/signtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:fontFamily="@font/roboto"
+            android:text="Sign"
+            android:textColor="@color/deepblue"
+
+            app:layout_constraintTop_toBottomOf="@id/et_mail" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/clerbtn"
+            android:layout_width="100dp"
+            android:text="clear"
+            android:textColor="@color/white"
+            android:background="@color/greybg"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:layout_height="40dp"/>
+     <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+        android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_marginTop="10dp"
+
+    android:background="@drawable/white_border">
+         <com.github.gcacace.signaturepad.views.SignaturePad
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/signature_pad" />
+
+</LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submitbtn"
+            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/confirmbtn_circle"
+            android:fontFamily="@font/open_sans"
+            android:padding="15dp"
+            android:textAllCaps="false"
+            android:text="Submit"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/signature_pad" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+<include layout="@layout/layout_progress"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

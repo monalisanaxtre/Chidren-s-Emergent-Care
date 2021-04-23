@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2645EF</color>
+    <color name="colorPrimaryDark">#237A37</color>
+    <color name="colorAccent">#28a745</color>
+    <color name="colorError">#FF6257</color>
+
+    <!-- <color name="text_heading_color">#080808</color>-->
+    <color name="text_heading_color">#000000</color>
+    <!--  <color name="text_heading_color">#505050</color>-->
+    <color name="white">#FFF</color>
+    <color name="cream">#FFF1F1F1</color>
+    <color name="black">#99030302</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue">#0b111e</color>
+    <color name="green">#28a745</color>
+    <color name="light_green">#f0f9ff</color>
+    <color name="green_bg">#99ce9f</color>
+    <color name="f_blue">#3dbb1a</color>
+    <color name="light_gray">#99C5C5C5</color>
+    <color name="icon_blue">#265396</color>
+    <color name="view_grey">#DDD9DA</color>
+    <color name="border_grey">#BDBDBD</color>
+    <color name="edit_text">#e1e1e1</color>
+    <color name="grey">#6D6D6D</color>
+    <color name="greybg">#9A9A9A</color>
+    <!-- <color name="grey_bg">#EDEDED</color>-->
+    <color name="grey_bg">#F1F1F1</color>
+    <color name="shadow_color">#DADADA</color>
+    <color name="light_gray_1">#F6F6F6</color>
+    <color name="black_transparent_50">#50000000</color>
+
+    <color name="light_purple">#4493057D</color>   <!--#E9CDE4-->
+    <color name="light_globe_blue">#4443B8C1</color>   <!--#E9CDE4-->
+    <color name="form_bg">#F1F1F1</color>
+
+    <color name="orage50">#F68A0D</color>
+    <color name="orage40">#E8F68A0D</color>
+    <color name="purole">#BB21A1</color>
+    <color name="l_d_gray">#FFFAF3</color>
+    <color name="orage44">#99f07d20</color>
+    <color name="dark_green">#006400</color>
+
+    <color name="background_bg_list">#F8F8F8</color>
+    <color name="sign_in_light_blue_color">#80d9ff</color>
+
+    <color name="transparent50">#f2f4f7</color>
+    <color name="white50">#80FFFFFF</color>
+    <color name="quote_color">#4478CA</color>
+    <color name="deepblue">#2645EF</color>
+
+    <color name="gradient_orange_end">#CD4F00</color>
+    <color name="gradient_orange_start">#F38104</color>
+
+    <color name="light_purple_alert">#AEEA1BC8</color>   <!--#E9CDE4-->
+
+    <color name="black_exact">#000</color>
+    <color name="gradient_green_start">#44E200</color>
+    <color name="gradient_green_end">#218F03</color>
+    <color name="underline_gray">#ECD0D0</color>
+    <color name="hint_color">#BBBBBB</color>
+</resources>

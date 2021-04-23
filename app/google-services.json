@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "466854839949",
+    "project_id": "children-s-emurgent-care",
+    "storage_bucket": "children-s-emurgent-care.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466854839949:android:ce54c2cd4a0a8f02f084c4",
+        "android_client_info": {
+          "package_name": "com.cec.doctorapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466854839949-rs8htg8bovnfrs7g81qkgscrrm9tfs6r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUjJnyYqpWMFfTSP5Z-BO3Usitk47jDGQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466854839949-rs8htg8bovnfrs7g81qkgscrrm9tfs6r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

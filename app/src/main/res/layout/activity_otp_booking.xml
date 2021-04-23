@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rootLayout"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <include
+        android:id="@+id/otptoolBar"
+        layout="@layout/common_action_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/otptxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Please Enter otp from the email to verify your booking we just sent you"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:fontFamily="@font/roboto"
+        android:textSize="18sp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/blue"
+        app:layout_constraintTop_toBottomOf="@id/otptoolBar"
+        >
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/otptxt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:fontFamily="@font/roboto"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_20"
+        android:textColor="@color/blue"
+        app:layout_constraintTop_toBottomOf="@id/otptxt">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <com.cec.doctorapp.ui.activities.OtpEditText
+        android:id="@+id/oev_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:maxLength="6"
+     android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginTop="100dp"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/otptxt2"
+        app:oev_primary_color="@color/blue"
+        app:oev_secondary_color="@color/light_gray"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/root_otp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:layout_marginTop="100dp"
+       app:layout_constraintTop_toBottomOf="@id/otptxt2"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <EditText
+            android:id="@+id/otp_edit_box1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:clickable="false"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="30sp"
+            android:background="@drawable/edittext_drawable_bg"> </EditText>
+
+
+        <EditText
+            android:id="@+id/otp_edit_box2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:inputType="number"
+            android:clickable="false"
+            android:maxLength="1"
+            android:background="@drawable/edittext_drawable_bg">
+            </EditText>
+
+
+        <EditText
+            android:id="@+id/otp_edit_box3"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:clickable="false"
+            android:inputType="number"
+            android:maxLength="1"
+            android:background="@drawable/edittext_drawable_bg">
+            </EditText>
+
+        <EditText
+            android:id="@+id/otp_edit_box4"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:clickable="false"
+            android:textSize="30sp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:background="@drawable/edittext_drawable_bg" >
+            </EditText>
+
+        <EditText
+            android:id="@+id/otp_edit_box5"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:background="@drawable/edittext_drawable_bg" />
+
+
+        <EditText
+            android:id="@+id/otp_edit_box6"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittext_drawable_bg" />
+
+
+    </LinearLayout>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/verify_otp_btn"
+            android:layout_width="225dp"
+            android:layout_height="0dp"
+            android:padding="14dp"
+            android:fontFamily="@font/roboto"
+            android:layout_marginTop="30dp"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/confirmbtn_circle"
+            app:layout_constraintTop_toBottomOf="@id/oev_view"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Verify"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

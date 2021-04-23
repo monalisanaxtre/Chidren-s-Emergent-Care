@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_feed"
+        android:icon="@drawable/feed"
+        android:tooltipText="null"
+        android:title="Feed" />
+
+    <item
+        android:id="@+id/nav_book"
+        android:icon="@drawable/bookingfooter"
+        android:tooltipText="null"
+
+        android:title="Booking" />
+
+    <item
+        android:id="@+id/nav_pricing"
+        android:icon="@drawable/prizefooter"
+        android:tooltipText="null"
+
+        android:title="Pricing" />
+
+    <item
+        android:id="@+id/nav_more"
+        android:icon="@drawable/viewicon"
+        android:tooltipText="null"
+        android:title="Consent form" />
+
+</menu>

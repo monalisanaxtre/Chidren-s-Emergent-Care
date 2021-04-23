@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/school"
+
+        android:title="SCHOOLS"/>
+
+    <item
+        android:id="@+id/blog"
+
+        android:title="BLOG"/>
+
+    <item
+        android:id="@+id/news"
+
+        android:title="NEWS AND UPDATES"/>
+
+<!--    <item-->
+<!--        android:id="@+id/compare"-->
+<!--        android:icon="@drawable/ic_home_black_24dp"-->
+<!--        android:title="COMPARE INSTITUTES"/>-->
+
+    <item
+        android:id="@+id/contactus"
+
+        android:title="CONTACT US"/>
+
+</menu>
