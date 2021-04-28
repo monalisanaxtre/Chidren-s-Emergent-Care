@@ -1,10 +1,0 @@
-
-œnetwork-security-config*
-    *ô
-êdomain-config"+cleartextTrafficPermittedtrue"2:@*	
-        4*O
-Gdomain"#includeSubdomainstrue"2:@*maven.apache.org)*	
-        B*L
-Ddomain"#includeSubdomainstrue"2:@*www.axmag.com)*
-    ?*	
-

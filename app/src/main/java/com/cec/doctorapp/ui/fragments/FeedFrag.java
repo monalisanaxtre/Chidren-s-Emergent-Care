@@ -72,7 +72,7 @@ public class FeedFrag extends BaseFragment {
         webViewSettings.setJavaScriptEnabled(true);
         webViewSettings.setPluginState(WebSettings.PluginState.ON);
         binding.webview.setWebViewClient(new WebViewClient());
-              binding. webview.loadUrl("http://182.77.57.62:8096/cec/fb.html");
+              binding. webview.loadUrl("https://cec-nodejs.herokuapp.com/fb_feed");
     }
 //    private void refreshData(){
 //

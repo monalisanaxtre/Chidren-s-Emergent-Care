@@ -1,40 +1,0 @@
-
-â
-9
-android*http://schemas.android.com/apk/res/androidmenu*
-
-    @*Ø
-¶item"[
-*http://schemas.android.com/apk/res/androidid@+id/school"(–ÅÑ2
-ùÉ®¯	id/school"A
-*http://schemas.android.com/apk/res/androidtitleSCHOOLS(·ÉÑ*
-
-    !*®
-üitem"W
-*http://schemas.android.com/apk/res/androidid	@+id/blog"
-(–ÅÑ2
-„Ä®¯id/blog">
-*http://schemas.android.com/apk/res/androidtitleBLOG(·ÉÑ
-*
-
-    *¥
-´item"W
-*http://schemas.android.com/apk/res/androidid	@+id/news"(–ÅÑ2
-ŸÇ®¯id/news"J
-*http://schemas.android.com/apk/res/androidtitleNEWS AND UPDATES(·ÉÑ*
-
-
-**	
-*	
-(*	
-:*
-
-    3*∏
-Øitem"a
-*http://schemas.android.com/apk/res/androidid@+id/contactus"(–ÅÑ2
-£Å®¯id/contactus"D
-*http://schemas.android.com/apk/res/androidtitle
-CONTACT US(·ÉÑ*
-
-
-$
