@@ -141,9 +141,7 @@ public class OTPActivity extends BaseActivity implements View.OnClickListener {
             @Override
             public void onSuccess(ResultModel<?> responseBody) {
                 if (responseBody.status == 0) {
-
                     showSnack("Wrong Otp");
-
                 } else {
                     Log.d("TAG", "SUCCESS");
                     hideProgress();

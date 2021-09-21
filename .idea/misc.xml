@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/bottom_navigation_color_selector.xml" value="0.5025" />
+        <entry key="app/src/main/res/layout/activity_booking_detail.xml" value="0.18501170960187355" />
+        <entry key="app/src/main/res/layout/activity_confirm_booking.xml" value="0.37896825396825395" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.26785714285714285" />
+        <entry key="app/src/main/res/layout/activity_otp_booking.xml" value="0.1865079365079365" />
+        <entry key="app/src/main/res/layout/activity_time.xml" value="0.32125" />
+        <entry key="app/src/main/res/layout/layout_no_data.xml" value="0.25793650793650796" />
+        <entry key="app/src/main/res/layout/more_frag.xml" value="0.19940476190476192" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.46375" />
+        <entry key="app/src/main/res/menu/navigation_menu.xml" value="0.46375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

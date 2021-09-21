@@ -184,6 +184,6 @@
             android:textColor="#ffffff"
             android:textSize="15sp" />
 
-
+    <include layout="@layout/layout_progress"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

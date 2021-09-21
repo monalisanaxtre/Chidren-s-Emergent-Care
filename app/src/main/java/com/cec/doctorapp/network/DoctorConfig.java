@@ -30,13 +30,15 @@ public class DoctorConfig {
     void setUrls() {
         switch (environment) {
             case DEV: {
+                BASE_URL="http://97.74.85.207:4203/api/";
 //                BASE_URL = "http://182.77.57.62:4202/api/";
-                BASE_URL = "https://cec-nodejs.herokuapp.com/api/";
+//                BASE_URL = "https://cec-nodejs.herokuapp.com/api/";
                 IMAGE_URL = "http://developtech.co.in/mj/dashboard/";
                 break;
             }
             case PRO: {
-                BASE_URL = "https://cec-nodejs.herokuapp.com/api/";
+                BASE_URL="http://97.74.85.207:4203/api/";
+//                BASE_URL = "https://cec-nodejs.herokuapp.com/api/";
                 IMAGE_URL = "https://shggroups.com/dashboard/";
                 break;
             }
