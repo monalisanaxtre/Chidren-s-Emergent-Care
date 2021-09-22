@@ -7,26 +7,18 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.graphics.drawable.Drawable
 import android.net.Uri
 import android.os.Bundle
 import android.print.PrintAttributes
 import android.print.PrintManager
-import android.util.Log
 import android.view.View
 import android.webkit.WebView
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.bumptech.glide.Glide
-import com.bumptech.glide.load.engine.DiskCacheStrategy
-import com.bumptech.glide.request.target.Target
 import com.cec.doctorapp.R
 import com.cec.doctorapp.databinding.ActivityPdfviewrBinding
 import com.cec.doctorapp.helper.Vu
-import com.cec.doctorapp.model.response.GetConsentform
-import com.cec.doctorapp.model.response.ResultModel
-import com.cec.doctorapp.network.NetworkListner
 import com.cec.doctorapp.ui.adapters.PdfDocumentAdapter
 import com.cec.doctorapp.utility.FileUtils
 import com.downloader.Error
@@ -36,6 +28,7 @@ import kotlinx.android.synthetic.main.activity_pdf_webview.*
 import kotlinx.android.synthetic.main.activity_pdfviewr.*
 import kotlinx.android.synthetic.main.activity_pdfviewr.progressBar
 import java.io.File
+
 
 
 class PDFViewActivity : BaseActivity(), View.OnClickListener {
@@ -191,9 +184,10 @@ class PDFViewActivity : BaseActivity(), View.OnClickListener {
             R.id.downloadbtn -> {
                 val fileName = "myFile.pdf"
                 intent.getStringExtra("CONSENT_PDF_LINK")?.let { link ->
-                    downloadPdfFromInternet(link,
-                            FileUtils.getRootDirPath(this),
-                            fileName,true)
+                   FileUtils.downloadDocumentImage(link, this)
+//                    downloadPdfFromInternet(link,
+//                            FileUtils.getRootDirPath(this),
+//                            fileName,true)
                 }
 
             }

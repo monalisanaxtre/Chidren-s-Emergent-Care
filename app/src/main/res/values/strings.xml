@@ -40,6 +40,7 @@
     <string name="msg_Time">Select your Time</string>
     <string name="nointernetmsg">No Internet Connection</string>
   <string name="nointernettextmsg">Please Check Your Internet connection and try again</string>
+    <string name="err_api_false">Something went wrong</string>
 
 
 </resources>

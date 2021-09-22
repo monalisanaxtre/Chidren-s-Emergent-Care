@@ -13,6 +13,8 @@ import androidx.multidex.MultiDexApplication;
 
 import com.cec.doctorapp.helper.Constants;
 import com.cec.doctorapp.network.NetworkModule;
+import com.cec.doctorapp.utility.NotificationManager;
+import com.downloader.PRDownloader;
 
 
 public class AppController extends MultiDexApplication {
@@ -26,6 +28,8 @@ public class AppController extends MultiDexApplication {
     public void onCreate() {
         super.onCreate();
         initDagger();
+        PRDownloader.initialize(getApplicationContext());
+        NotificationManager.Companion.initializeDefaults(this);
         this.initNetworkMonitor();
     }
     public static synchronized AppController getInstance() {

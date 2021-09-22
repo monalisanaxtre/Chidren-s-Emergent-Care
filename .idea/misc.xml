@@ -7,8 +7,10 @@
         <entry key="app/src/main/res/layout/activity_booking_detail.xml" value="0.18501170960187355" />
         <entry key="app/src/main/res/layout/activity_confirm_booking.xml" value="0.37896825396825395" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.26785714285714285" />
-        <entry key="app/src/main/res/layout/activity_otp_booking.xml" value="0.1865079365079365" />
+        <entry key="app/src/main/res/layout/activity_otp_booking.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_pdfviewr.xml" value="0.1775793650793651" />
         <entry key="app/src/main/res/layout/activity_time.xml" value="0.32125" />
+        <entry key="app/src/main/res/layout/feed_frag.xml" value="0.17875" />
         <entry key="app/src/main/res/layout/layout_no_data.xml" value="0.25793650793650796" />
         <entry key="app/src/main/res/layout/more_frag.xml" value="0.19940476190476192" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.46375" />

@@ -65,14 +65,14 @@ public class FeedFrag extends BaseFragment {
 //        getFeed();
 //        binding.pullToRefresh.setOnRefreshListener(() -> {
 //            refreshData();
-//            binding.pullToRefresh.setRefreshing(false);
+//            binding.pullToRefresh.setRefreshing(false);++*-
 //        });
         WebSettings webViewSettings = binding.webview.getSettings();
         webViewSettings.setJavaScriptCanOpenWindowsAutomatically(true);
         webViewSettings.setJavaScriptEnabled(true);
         webViewSettings.setPluginState(WebSettings.PluginState.ON);
         binding.webview.setWebViewClient(new WebViewClient());
-              binding. webview.loadUrl("https://cec-nodejs.herokuapp.com/fb_feed");
+              binding. webview.loadUrl("http://97.74.85.207:4203/fb_feed");
     }
 //    private void refreshData(){
 //

@@ -90,6 +90,9 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/provider_paths" />
         </provider>
+        <service
+            android:name="com.cec.doctorapp.utility.NotificationListenerService"
+            android:exported="false" />
     </application>
 
 </manifest>
